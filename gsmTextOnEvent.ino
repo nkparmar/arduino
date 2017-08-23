@@ -66,7 +66,8 @@ if(sendSMS) { //
      Serial.println("Sending SMS: ");
      Serial.print(sendSMS ? "yes": "no");
      
-        GPRS.println("AT+CMGS=\"+919945060790\"\n");
+  // CHANGE THE MOBILE NUMBER!!!
+        GPRS.println("AT+CMGS=\"+91XXXXXXXXXX\"\n"); 
         GPRS.println("Bro, looks like I have an uninvited guest. Please check.");  
 //        GPRS.println("Yes");  
         GPRS.write( 0x1a ); // ctrl+Z character
