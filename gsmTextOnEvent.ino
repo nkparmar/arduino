@@ -89,7 +89,7 @@ if(sendSMS) { //
                 Serial.print("SensorDetectionCount value :");
                 Serial.println(SensorDetectionCount);
               Serial.println("Placing call..");
-              GPRS.println("ATD+919945060790;");
+              GPRS.println("ATD+91XXXXXXXXXX;");
               delay(20000);
               SensorDetectionCount = 0;
               digitalWrite(led_1, LOW);
